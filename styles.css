@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+body {
+    background-image: url(boxback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    height: 100vh;
+    color: white;
+}
+
+.hidden {
+    position: relative;
+    display: none;
+}
+
+.newgame {
+    box-sizing: border-box;
+    max-width: 60vw;
+    margin: auto;
+    font-size: 3rem;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.newgamebutton {
+    color: white;
+    height: 2rem;
+    width: 10rem;
+    background-color: red;
+    margin: 5px;
+}
+
+.main {
+    max-width: 45vw;
+    margin: auto;
+    padding: 50px;
+}
+
+.box {
+    box-shadow: 5px 3px 50px rgb(196, 194, 194);
+    width: 100px;
+    height: 100px;
+    color: black;
+    margin: 6px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 3rem;
+    background: rgb(210, 242, 245);
+    transform: scale(1);
+    transition: transform 0.2ms ease-in;
+}
+/* hover property  that increase the  size of the every box whenever we :hover */
+.box:hover {
+    transform: scale(1.1);
+}
+
+.container1,
+.container2,
+.container3 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.reset {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+.resetbutton {
+    color: white;
+    height: 2rem;
+    width: 10rem;
+    background-color: red;
+    margin: 5px;
+}
+
+.newgamebutton,
+.resetbutton {
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/* whole media query that basically made change on user device screen size  */
+
+@media only screen and (max-width:550px) {
+    .box {
+        height: 70px;
+        font-size: 2rem;
+    }
+
+    .newgame {
+        font-size: 2rem;
+    }
+
+    .newgamebutton {
+        font-size: 12px;
+        width: 6rem;
+    }
+}
